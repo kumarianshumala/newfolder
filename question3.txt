@@ -1,0 +1,1 @@
+select * from orders O,orderItem Ot where O.orderId=Ot.orderId (select productname,quantities, unitprice from orderItem Ot, product p where Ot.productId=p.productId )
